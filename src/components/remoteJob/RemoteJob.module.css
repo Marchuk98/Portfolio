@@ -1,0 +1,27 @@
+.remoteJobBlock{
+    height: 30vh;
+    background-color: brown;
+
+}
+.remoteJobContainer{
+
+}
+.remote{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.remoteButton{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background: chocolate;
+}
