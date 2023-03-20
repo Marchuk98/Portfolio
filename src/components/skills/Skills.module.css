@@ -1,5 +1,5 @@
 .skillsBlock{
-    height: 100vh;
+    min-height: 100vh;
     background-color: gray;
 }
 
@@ -9,6 +9,7 @@
     flex-wrap: nowrap;
 }
 .title{
+    margin: 20px 0;
     background-color: gold;
 }
 
@@ -18,5 +19,4 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
 }

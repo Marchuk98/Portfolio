@@ -7,12 +7,12 @@ const Contacts = () => {
         <div className={styles.contactsBlock}>
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
                 <h2 className={styles.title}>Contacts</h2>
-                    <form className={styles.contactsForm}>
-                        <input className={styles.contactsInput} type={"text"}/>
-                        <input className={styles.contactsInput} type={"text"}/>
-                        <textarea className={styles.contactTextArea} name={''} id={''} cols={30} rows={10}/>
-                        <a className={styles.forSubmit} href={''}>Send</a>
-                    </form>
+                <form className={styles.contactsForm}>
+                    <input className={styles.contactsInput} type={"text"}/>
+                    <input className={styles.contactsInput} type={"text"}/>
+                    <textarea name={''} id={''} cols={30} rows={10}/>
+                </form>
+                <a className={styles.forSubmit} href={''}>Send</a>
             </div>
         </div>
     );

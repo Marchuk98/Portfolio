@@ -11,6 +11,8 @@ const Projects = () => {
                 <div className={styles.projects}>
                     <ProjectItem title={"Project title"} description={"Brief description"}/>
                     <ProjectItem title={"Project title"} description={"Brief description"}/>
+                    <ProjectItem title={"Project title"} description={"Brief description"}/>
+                    <ProjectItem title={"Project title"} description={"Brief description"}/>
                 </div>
             </div>
         </div>

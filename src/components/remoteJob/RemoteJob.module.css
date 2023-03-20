@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 .remoteButton{
     text-decoration: none;
@@ -20,8 +21,12 @@
     font-size: 15px;
     border-radius: 15px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     padding: 10px 30px;
     background: chocolate;
+}
+
+.title{
+    margin: 20px 0;
 }

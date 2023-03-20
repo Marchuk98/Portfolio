@@ -1,7 +1,6 @@
 .footerBlock{
     display: flex;
     align-items: center;
-    height: 35vh;
     background-color: darksalmon;
 }
 
@@ -18,11 +17,11 @@
 
 .footerItem{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 280px;
     flex-wrap: wrap;
     border: solid 1px #000000;
     margin-top: 7vh;
-    min-width: 50vw;
 }
 
 .footerItem a{
@@ -32,8 +31,8 @@
     text-decoration: none;
     color: white;
     background-color: gray;
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
 
 }
 

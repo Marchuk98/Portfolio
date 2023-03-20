@@ -8,7 +8,7 @@ const Main = () => {
             <div className={styleContainer.container}>
             <div className={styles.text}>
                 <span>Hi There</span>
-                <h1>I am Jeffrey Aaron</h1>
+                <h1>I am Vladimir Marchuk</h1>
                 <p>Frontend developer</p>
             </div>
             <div className={styles.photo}></div>
