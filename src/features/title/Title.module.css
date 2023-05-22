@@ -1,0 +1,20 @@
+.title {
+    max-width: 710px;
+    text-align: center;
+    margin-bottom: 36px;
+    color: rgb(255 255 255);
+    line-height: 1.2;
+    letter-spacing: 5px;
+    width: 100%;
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+.title p {
+    font-size: 20px;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
