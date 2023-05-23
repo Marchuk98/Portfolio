@@ -1,19 +1,23 @@
 import React from 'react';
-import styles from './ProjectItem.module.css'
+import styles from './ProjectItem.module.scss'
 
 type ProjectItemPropsType = {
     title:string
     description:string
+    projectLink:string
+    projectImg:string
 }
 
 const ProjectItem = (props:ProjectItemPropsType) => {
     return (
         <div className={styles.project}>
+            <a className={styles.card} href={props.projectLink} target="_blank">
             <div className={styles.previevImage}>
-                <a className={styles.projectButton} href={""}>To pass</a>
+                    <img src={props.projectImg} alt={props.title}/>
             </div>
-            <div className={styles.textField}>
-                <span className={styles.title}>{props.title}</span>
+            </a>
+            <div className={styles.projectInfo}>
+                <h3 className={styles.title}>{props.title}</h3>
                 <span className={styles.description}>{props.description}</span>
             </div>
         </div>
@@ -21,3 +25,6 @@ const ProjectItem = (props:ProjectItemPropsType) => {
 };
 
 export default ProjectItem;
+
+
+

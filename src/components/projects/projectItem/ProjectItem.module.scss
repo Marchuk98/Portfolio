@@ -1,0 +1,83 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixin";
+.project {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 450px;
+  background-color: #2d343e;
+  margin-bottom: 15px;
+  .card {
+    position: relative;
+    transition: transform 4s ease-in;
+    overflow: hidden;
+    &:before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "VIEW!";
+      transform: translateX(-100%);
+      font-size: 25px;
+      color: rgb(224, 204, 204);
+      background-color: rgba(188, 143, 143, 0.137);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      transition: transform 0.4s ease-in;
+      border: 4px solid white;
+      box-sizing: border-box;
+    }
+    &:after {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "VIEW!";
+      transform: translateX(100%);
+      font-size: 25px;
+      color: rgb(224, 204, 204);
+      background-color: rgba(188, 143, 143, 0.137);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      transition: transform 0.4s ease-in;
+      border: 4px solid white;
+      box-sizing: border-box;
+    }
+    &:hover::before {
+      transform: translateX(0%);
+    }
+    &:hover::after {
+      transform: translateX(0%);
+    }
+    .previevImage img {
+      width: 100%;
+      height: 400px;
+      transition: transform 1s ease-in;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .projectInfo {
+    padding: 15px 15px;
+    .title {
+      @include text($TitleFontFamily,16px,1.2);
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+      text-transform: uppercase;
+    }
+    .description {
+      @include text($TextFontFamily,18px,24px);
+      font-weight: 400;
+    }
+  }
+}
