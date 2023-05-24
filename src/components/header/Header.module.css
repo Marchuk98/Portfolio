@@ -3,9 +3,10 @@
     justify-content: flex-end;
     align-items: center;
     height: 60px;
-    background-color: #7fa7f6;
+    background-color: #272727;
 }
 
 .headerContainer{
     justify-content: flex-end !important;
+    align-items: end  !important;
 }

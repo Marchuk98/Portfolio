@@ -1,15 +1,65 @@
 import React from 'react';
-import styles from './Nav.module.css'
+import styles from "./Nav.module.css";
+import { Link } from "react-scroll";
 
-const Nav = () => {
+export const NavLinks = () => {
     return (
-        <div className={styles.nav}>
-            <a href="">Main</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contacts</a>
-        </div>
+        <ul className={styles.nav}>
+            <li>
+                <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={450}
+                    className={styles.navlinkItem}
+                >
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    duration={450}
+                    className={styles.navlinkItem}
+                >
+                    Skills
+                </Link>
+            </li>
+            <li>
+                <Link
+                    to="my-projects"
+                    spy={true}
+                    smooth={true}
+                    duration={450}
+                    className={styles.navlinkItem}
+                >
+                   projects
+                </Link>
+            </li>
+            <li>
+                <Link
+                    to="remote-work"
+                    spy={true}
+                    smooth={true}
+                    duration={450}
+                    className={styles.navlinkItem}
+                >
+                    Remote
+                </Link>
+            </li>
+            <li>
+                <Link
+                    to="contact-me"
+                    spy={true}
+                    smooth={true}
+                    duration={450}
+                    className={styles.navlinkItem}
+                >
+                    Contact
+                </Link>
+            </li>
+        </ul>
     );
 };
-
-export default Nav;
