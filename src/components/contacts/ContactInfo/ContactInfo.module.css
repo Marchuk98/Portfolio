@@ -1,0 +1,33 @@
+.contactInfoWrapper{
+    display: flex;
+}
+
+.contactInfoIcon{
+    background-color: #e0cccc;
+    border-radius: 50%;
+    font-size: 28px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 24px;
+    text-align: center;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.contactInfo{
+    margin-top: 6px;
+
+}
+
+.contactInfoTitle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: white;
+}
+
+.contactInfoText{
+    display: flex;
+    flex-direction: column;
+    color: #b0aac0;
+}

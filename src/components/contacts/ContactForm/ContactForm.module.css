@@ -1,0 +1,86 @@
+.contactInfoWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contactInfoIcon {
+    margin-right: 10px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfoTitle {
+    font-weight: bold;
+}
+
+.contactInfoText {
+    color: #888888;
+}
+
+.contacts_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Задайте максимальную ширину по вашему усмотрению */
+    margin: 0 auto;
+}
+
+.contact_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contacts_input_block {
+    align-items: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.contacts_input {
+    background: transparent;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    color: #b0aac0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 12px 18px;
+    width: 48%;
+}
+
+.contacts_textarea {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.main_btn {
+    padding: 14px 24px;
+    margin-top: 20px;
+    background-color: #5b74d7;
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.main_btn:hover {
+    background-color: #026946;
+}
+
+.main_btn:focus {
+    outline: none;
+}
+
