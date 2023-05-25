@@ -1,14 +1,152 @@
-.mainBlock{
-    height: 100vh;
-    background-color:lightsalmon;
+.mainBlock {
+    min-height: 100vh;
+    background-color: #272727;
+    position: relative;
+}
+.mainWrapperBlock{
+  margin-top: 300px;
 }
 
-.text{
-    width: 300px;
-    background-color: gray;
+.mainWrapperText {
+    width: 90%;
+    max-width: 700px;
+    position: relative;
 }
-.photo{
-    width: 300px;
-    height: 400px;
-    background-color: gray;
+
+.textBlock {
+    width: 60%;
+    padding: 20px;
+}
+
+.mainGeneralTitle {
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 51px;
+    letter-spacing: 0.07em;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.mainNameTitle {
+    font-family: Jost,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 90px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.mainDescriptionText{
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.mainButton {
+    background-color: transparent;
+    color: #fff;
+    width: 230px;
+    height: 75px;
+    border: 2px solid  #00ff99;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+
+.mainWrapperText::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #00ff99;
+    top: 0;
+    left: -30px;
+    transform: translateX(-50%);
+}
+
+.mainDynamicPrint{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 440px;
+    height: 80px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+
+.mainPrefixText {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    color: #00FF99;
+    text-shadow: 0px 0px 16px rgba(0, 255, 153, 0.55);
+}
+
+
+.mainDescriptionText {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.35);
+    width: 90%;
+    max-width: 700px;
+    word-wrap: break-word;
+}
+
+.mainPrefixText span:first-child {
+    color: #D1D0C5;
+}
+
+.mainPhoto {
+
+}
+.photo {
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 760px){
+    .mainGeneralTitle{
+        font-size: 25px;
+    }
+    .mainNameTitle{
+    font-size: 32px;
+}
+}
+
+@media screen and (max-width: 960px) {
+    .mainWrapper {
+        flex-direction: column-reverse;
+    }
+    .mainPhoto {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainPhoto {
+        max-width: 100%;
+        max-height: none;
+    }
+    .photo{
+        margin-top: 0;
+    }
+    .mainWrapperBlock{
+        margin-top: 100px;
+    }
 }
