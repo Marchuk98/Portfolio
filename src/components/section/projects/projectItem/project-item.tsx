@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './project-item.module.scss'
-import {Button} from "../../button/button";
+import {Button} from "../../../button/button";
 
 type ProjectItemType = {
     id: number
@@ -9,6 +9,7 @@ type ProjectItemType = {
     linkDeploy: string
     linkRepo: string
     projectTitle: string
+    projectDescription: string
 }
 
 type ProjectItemPropsType = {
@@ -16,7 +17,7 @@ type ProjectItemPropsType = {
 }
 
 export const ProjectItem = ({project}: ProjectItemPropsType) => {
-    const {projectTitle, title, img, linkRepo, linkDeploy} = project;
+    const {projectTitle, title, img, linkRepo, linkDeploy, projectDescription} = project;
     // контейнер сюда надо наверное
     return (
         <li className={s.project}>
@@ -29,6 +30,7 @@ export const ProjectItem = ({project}: ProjectItemPropsType) => {
             </div>
             <div className={s.projectInfo}>
                 <h3 className={s.title}>{projectTitle}</h3>
+                <span className={s.description}>{projectDescription}</span>
             </div>
         </li>
     );

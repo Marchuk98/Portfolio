@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin text($fontFamily,$fontSize,$lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+}
+
+@mixin flex($direction, $align: initial, $justify: initial, $wrap: initial) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
+
+@mixin position($position: initial, $top: initial, $right: initial, $bottom: initial, $left: initial) {
+  position: $position;
+  top: $top;
+  right: $right;
+  button: $bottom;
+  left: $left;
+}
+
+$maxWidth: 1140;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 310;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 310px) / #{$maxWidth}));
+}

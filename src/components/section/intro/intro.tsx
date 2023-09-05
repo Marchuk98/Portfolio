@@ -1,12 +1,11 @@
 import React, {useEffect, useRef} from 'react';
-import s from './main.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
+import s from './intro.module.scss';
 import Typed from 'typed.js';
-import mySelf from '../assets/image/myPhoto.png'
-import { FaJs, FaReact } from 'react-icons/fa';
+import mySelf from '../../assets/image/myPhoto.png'
+import {FaJs, FaReact} from 'react-icons/fa';
 import {SiRedux, SiTypescript} from "react-icons/si";
 
-export const Main = () => {
+export const Intro = () => {
     const type = useRef(null);
 
     useEffect(() => {

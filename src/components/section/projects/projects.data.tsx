@@ -1,5 +1,5 @@
-import todolist from '../../components/assets/image/todolist.jpg'
-import socialWeb from '../../components/assets/image/social-network.png'
+import todolist from '../../assets/image/todolist.jpg'
+import socialWeb from '../../assets/image/social-network.png'
 
 export const projects = [
     {
@@ -8,7 +8,8 @@ export const projects = [
         img: socialWeb, /////// редакт
         linkDeploy: '',
         linkRepo: '',
-        projectTitle: 'Social Web'
+        projectTitle: 'Social Web',
+        projectDescription:'React project with Redux, Axios, TypeScript, React Hook Form'
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ export const projects = [
         img: todolist, /////// редакт
         linkDeploy: '',
         linkRepo: '',
-        projectTitle: 'Todolist'
+        projectTitle: 'Essence-Cards',
+        projectDescription:'Description'
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ export const projects = [
         img: socialWeb, /////// редакт
         linkDeploy: '',
         linkRepo: '',
-        projectTitle: 'Essence-Cards'
+        projectTitle: 'Todolist',
+        projectDescription:'Description'
     },
     {
         id: 4,
@@ -32,7 +35,8 @@ export const projects = [
         img: socialWeb, /////// редакт
         linkDeploy: '',
         linkRepo: '',
-        projectTitle: 'Essence-Cards'
+        projectTitle: 'Name-Project',
+        projectDescription:'Description'
     },
     {
         id: 5,
@@ -40,6 +44,7 @@ export const projects = [
         img: socialWeb, /////// редакт
         linkDeploy: '',
         linkRepo: '',
-        projectTitle: 'Essence-Cards'
+        projectTitle: 'Essence-Cards',
+        projectDescription:'Description'
     }
 ]
