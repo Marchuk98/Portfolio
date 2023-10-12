@@ -1,22 +1,23 @@
 import React from 'react';
 import styles from './Skills.module.css'
-import styleContainer from '../common/Container.module.css'
-import Skill from './skill/Skill'
+import styleContainer from '../common/styles/Container.module.css'
+import {Skill} from './skill/Skill'
+import {Typography} from "../typography/typography";
+import {skills} from "./skills.data";
+import s from './Skills.module.css'
 
-const Skills = () => {
+export const Skills = () => {
+
+    const mappedSkills = skills.map((skill) => {
+        return <Skill key={skill.skillId} skill={skill}/>
+    })
+
     return (
-        <div className={styles.skillsBlock}>
+        <section id={'skills'} className={styles.skillsBlock}>
             <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
-                <h2 className={styles.title}>Skills</h2>
-                <div className={styles.skills}>
-                    <Skill title ={"JS"} description={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."}/>
-                    <Skill title ={"CSS"} description={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."}/>
-                    <Skill title ={"React"} description={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'}/>
-                    <Skill title ={"Sass"} description={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'}/>
-                </div>
+                <Typography className={s.title}>Skills</Typography>
+                <div className={styles.skills}>{mappedSkills}</div>
             </div>
-        </div>
+        </section>
     );
 };
-
-export default Skills;
