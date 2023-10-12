@@ -1,15 +1,28 @@
 import React from 'react';
-import styles from './Skill.module.css'
+import styles from './Skill.module.css';
+import { IconType } from 'react-icons'
 
+type SkillType = {
+    skillId: number
+    title: string;
+    fill: string
+    Icons: IconType
+}
 
-const Skill = (props:any) => {
+type SkillPropsType = {
+    skill: SkillType
+}
+
+export const Skill = ({skill}: SkillPropsType) => {
+
+    const {Icons, fill, title} = skill
+
     return (
         <div className={styles.skill}>
-            <div className={styles.icon}></div>
-            <h3 className={styles.skillTitle}>{props.title}</h3>
-            <span className={styles.description}>{props.description}</span>
+            <div className={''}>
+                <Icons size={100} color={fill}/>
+            </div>
+            <h3 className={styles.skillTitle}>{title}</h3>
         </div>
     );
 };
-
-export default Skill;
