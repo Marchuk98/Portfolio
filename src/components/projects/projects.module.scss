@@ -1,11 +1,10 @@
-@import "../common/styles/sass/variables";
 .projectsBlock {
-  background-color: $bgColor;
+  padding: 25px 0 80px 0;
+  background-color: #272727;
 
   .projectsContainer {
     justify-content: center;
     height: auto;
-    padding: 100px 0;
 
     .projects {
       display: flex;
