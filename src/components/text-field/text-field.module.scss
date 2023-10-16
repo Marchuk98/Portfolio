@@ -1,0 +1,42 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+
+.fieldContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #4c4c4c;
+}
+
+  .field {
+    cursor: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 6px 40px 6px 12px;
+
+    font-size: 0.875rem;
+    line-height: 24px;
+    color: #fff;
+
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 0 0 0 1px #4c4c4c;
+
+    transition: 0.3s;
+
+    &.errorMessage{
+      color: #f23d61;
+      box-shadow: 0 0 0 1px #f23d61;
+    }
+  }
+
+}
+
+
