@@ -11,5 +11,5 @@ export const ControlledTextField = <T extends FieldValues>({control, name, ...re
     const {field, fieldState: {error}} = useController({name, control})
 
 
-    return <TextField {...field} {...rest} />
+    return <TextField {...field} errorMessage={error?.message} {...rest} />
 }
