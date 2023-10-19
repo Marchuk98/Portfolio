@@ -87,9 +87,10 @@
     font-weight: 600;
     font-size: 35px;
     line-height: 48px;
+    margin-left: 20px;
     letter-spacing: 0.05em;
     color: #00FF99;
-    text-shadow: 0px 0px 16px rgba(0, 255, 153, 0.55);
+    text-shadow: 0 0 16px rgba(0, 255, 153, 0.55);
 }
 
 
@@ -111,8 +112,64 @@
 }
 
 .mainPhoto {
-
+    position: relative;
+    display: inline-block;
 }
+
+.icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+svg{
+    width: 70px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.icon {
+    position: absolute;
+    animation: moveWave 5s ease-in-out infinite;
+}
+
+
+@keyframes moveWave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+.icons .icon:nth-child(1) {
+    top: 30%;
+    left: 0;
+}
+.icons .icon:nth-child(2) {
+    bottom: 20%;
+    right: 0;
+}
+.icons .icon:nth-child(3) {
+    bottom: 5%;
+    left: 10%;
+}
+.icons .icon:nth-child(4) {
+    top: 20%;
+    right: 10%;
+}
+
 .photo {
     width: 100%;
     max-width: 500px;

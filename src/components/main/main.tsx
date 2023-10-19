@@ -1,10 +1,12 @@
-import React, { useRef, useEffect } from 'react';
-import styles from './Main.module.css';
+import React, {useEffect, useRef} from 'react';
+import styles from './main.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Typed from 'typed.js';
 import mySelf from '../assets/image/myPhoto.png'
+import { FaJs, FaReact } from 'react-icons/fa';
+import {SiRedux, SiTypescript} from "react-icons/si";
 
-const Main = () => {
+export const Main = () => {
     const type = useRef(null);
 
     useEffect(() => {
@@ -39,9 +41,14 @@ const Main = () => {
                                 work.
                             </p>
                         </div>
-                        <button className={styles.mainButton}>My projects</button>
                     </div>
                     <div className={styles.mainPhoto}>
+                        <div className={styles.icons}>
+                            <FaReact className={styles.icon} color="#61dafb" />
+                            <SiRedux className={styles.icon} color="#764abc" />
+                            <SiTypescript className={styles.icon} color="#007acc" />
+                            <FaJs className={styles.icon} color="#f7df1e" />
+                        </div>
                         <img className={styles.photo} src={mySelf} alt="Your Photo" />
                     </div>
                 </div>
@@ -49,5 +56,3 @@ const Main = () => {
         </div>
     );
 };
-
-export default Main;
