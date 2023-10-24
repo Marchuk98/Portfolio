@@ -1,22 +1,25 @@
+@import "../../common/styles/sass/_mixin.scss";
+
+
 .contactInfoWrapper{
-    display: flex;
+    @include flex(row, space-between, initial, initial);
+
+    @media (max-width: 768px) {
+        .contactInfoWrapper {
+            @include flex(center);
+        }
+    }
 }
 
 .contactInfoIcon{
-    background-color: #e0cccc;
-    border-radius: 50%;
     font-size: 28px;
-    height: 60px;
-    line-height: 60px;
-    margin-right: 24px;
+    margin-right: 65px;
     text-align: center;
     width: 60px;
-    margin-bottom: 20px;
 }
 
 .contactInfo{
-    margin-top: 6px;
-
+  @include flex(column)
 }
 
 .contactInfoTitle{

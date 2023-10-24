@@ -1,20 +1,18 @@
 import React from 'react';
-import styles from './ContactInfo.module.css'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {IconDefinition} from "@fortawesome/free-brands-svg-icons";
+import styles from './contact-info.module.scss'
 
 type ContactInfoPropsType = {
-    title:string
-    infoText:string
-    icon:IconDefinition
+    title: string
+    infoText: string
+    IconComponent: React.FC
 }
 
 
-export const ContactInfo:React.FC<ContactInfoPropsType> = ({title,infoText,icon}) => {
+export const ContactInfo: React.FC<ContactInfoPropsType> = ({title, infoText, IconComponent}) => {
     return (
         <div className={styles.contactInfoWrapper}>
             <div className={styles.contactInfoIcon}>
-                <FontAwesomeIcon icon={icon} style={{color: "#ffffff",}} />
+                <IconComponent />
             </div>
             <div className={styles.contactInfo}>
                 <span className={styles.contactInfoTitle}>{title}</span>

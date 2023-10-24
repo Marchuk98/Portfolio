@@ -1,0 +1,27 @@
+@import "../common/styles/sass/mixin";
+
+.contactsBlock{
+    background-color: #272727;
+    padding: 80px 0;
+}
+
+.contactsContainer{
+  @include flex(column, center, center, wrap)
+}
+.title{
+    background-color: silver;
+}
+
+.contactsInfoItem{
+    @include flex(column);
+    row-gap: 25px;
+}
+
+.contactsFormWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+

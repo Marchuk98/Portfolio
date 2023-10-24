@@ -1,0 +1,53 @@
+@import "../../common/styles/sass/mixin";
+
+.contacts_form {
+   @include flex(column);
+    row-gap: 30px;
+    flex: 0 1 40%;
+    min-width: 300px;
+    padding: 0 0 0 15px;
+
+  @media screen and (max-width: 768px) {
+    flex: 1 1 100%;
+    padding: 0;
+    margin-top: 50px;
+  }
+}
+
+.contacts_input_wrapper {
+  align-items: normal;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 100%;
+
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+  }
+}
+
+.contacts_textarea {
+    padding: 10px;
+    background-color: rgba(217, 217, 217, 0.06);
+    border: 1px solid #888888;
+    border-radius: 4px;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+}
+
+.contactBtn {
+    margin-top: 20px;
+    background: transparent;
+    color: #fff;
+    border: none;
+  @media screen and (max-width: 767.98px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
