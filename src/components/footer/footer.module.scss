@@ -1,0 +1,56 @@
+.footerBlock{
+    display: flex;
+    align-items: center;
+    background-color: #131313;
+}
+
+.footerContainer{
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.text{
+    margin-top: 5vh;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.footerList{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-top: 7vh;
+    list-style-type: none;
+}
+
+.footerItem{
+    width: 50px;
+    height: 50px;
+
+    svg {
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .cd:hover {
+        color: #bb432c;
+    }
+
+    .tg:hover {
+        color: #0088cc;
+    }
+
+    .git:hover {
+        color: #000000;
+    }
+
+    .link:hover {
+        color: #0077b5;
+    }
+}
+
+.footerPrivacy{
+    margin-top: 6vh;
+    color: #fff;
+}
