@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Nav.module.css";
+import styles from "./nav.module.scss";
 import { Link } from "react-scroll";
 
 export const NavLinks = () => {
@@ -11,7 +11,7 @@ export const NavLinks = () => {
                     spy={true}
                     smooth={true}
                     duration={450}
-                    className={styles.navlinkItem}
+                    className={`${styles.navLinkItem} ${styles.active}`}
                 >
                     Home
                 </Link>
@@ -22,7 +22,8 @@ export const NavLinks = () => {
                     spy={true}
                     smooth={true}
                     duration={450}
-                    className={styles.navlinkItem}
+                    offset={-70}
+                    className={styles.navLinkItem}
                 >
                     Skills
                 </Link>
@@ -33,7 +34,8 @@ export const NavLinks = () => {
                     spy={true}
                     smooth={true}
                     duration={450}
-                    className={styles.navlinkItem}
+                    offset={-70}
+                    className={styles.navLinkItem}
                 >
                    projects
                 </Link>
@@ -44,7 +46,8 @@ export const NavLinks = () => {
                     spy={true}
                     smooth={true}
                     duration={450}
-                    className={styles.navlinkItem}
+                    offset={-80}
+                    className={styles.navLinkItem}
                 >
                     Remote
                 </Link>
@@ -55,7 +58,7 @@ export const NavLinks = () => {
                     spy={true}
                     smooth={true}
                     duration={450}
-                    className={styles.navlinkItem}
+                    className={styles.navLinkItem}
                 >
                     Contact
                 </Link>
