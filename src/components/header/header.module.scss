@@ -1,0 +1,17 @@
+@import '../../components/common/styles/sass/mixin';
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #272727;
+    z-index: 1000;
+
+    .headerContainer{
+        @include flex(row, center, flex-end);
+        min-height: 70px;
+        @media screen and (max-width: 475px){
+            @include flex(row, center, center)
+        }
+    }
+}
