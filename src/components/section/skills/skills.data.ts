@@ -39,7 +39,7 @@ export const skills = [
     },
     {
         skillId: 2,
-        title: 'Redux/RTK/RTKQuery',
+        title: 'Redux',
         Icons: icons.redux,
         fill: '#764abc',
     },
