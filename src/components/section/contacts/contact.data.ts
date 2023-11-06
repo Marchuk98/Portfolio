@@ -1,4 +1,4 @@
-import {Address, Email, Phone, CvIcon} from "../assets";
+import {Address, Email, Phone, CvIcon} from '../../../assets';
 
 export const contacts = [
     {title: 'Address', infoText: 'Brest, Belarus', IconComponent: Address},
