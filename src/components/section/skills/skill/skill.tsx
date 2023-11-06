@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skill.module.css';
+import s from './skill.module.scss';
 import { IconType } from 'react-icons'
 
 type SkillType = {
@@ -18,11 +18,11 @@ export const Skill = ({skill}: SkillPropsType) => {
     const {Icons, fill, title} = skill
 
     return (
-        <div className={styles.skill}>
-            <div className={''}>
-                <Icons size={100} color={fill}/>
+        <div className={s.skill}>
+            <div>
+                <Icons size={60} color={fill}/>
             </div>
-            <h3 className={styles.skillTitle}>{title}</h3>
+            <h3 className={s.skillTitle}>{title}</h3>
         </div>
     );
 };
