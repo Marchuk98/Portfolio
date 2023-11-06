@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import s from './intro.module.scss';
 import Typed from 'typed.js';
-import mySelf from '../../assets/image/myPhoto.png'
+import mySelf from '../../../assets//image/myPhoto.png'
 import {FaJs, FaReact} from 'react-icons/fa';
 import {SiRedux, SiTypescript} from "react-icons/si";
 
