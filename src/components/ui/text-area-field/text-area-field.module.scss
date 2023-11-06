@@ -24,13 +24,15 @@
     line-height: 24px;
     border-radius: 2px;
     outline: none;
+    color: #fff;
     border: 2px solid rgba(255, 255, 255, 0.19);
-    background: rgba(217, 217, 217, 0.06);
+    background: #333232;
     transition: 0.3s;
     resize: none;
 
     &::placeholder {
       color: #808080;
+      font-family: 'Comfortaa', cursive;
     }
 
     &:disabled {
@@ -49,7 +51,7 @@
 
     &:hover:not(&:disabled) {
       border: 2px solid rgba(255, 255, 255, 0.19);
-      background: rgba(217, 217, 217, 0.06);
+      background: #333232;
     }
 
     &.error {
