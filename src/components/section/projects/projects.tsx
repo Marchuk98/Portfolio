@@ -1,7 +1,7 @@
 import React from 'react';
 import s from "./projects.module.scss"
 import {ProjectItem} from "./projectItem/project-item";
-import {Typography} from "../../typography/typography";
+import {Title} from '../../ui/title/title'
 import {projects} from "./projects.data";
 
 export const Projects = () => {
@@ -13,7 +13,7 @@ export const Projects = () => {
     return (
         <section id={'my-projects'} className={s.projectsBlock}>
             <div className={`container ${s.projectsContainer}`}>
-                <Typography>My projects</Typography>
+                <Title>My projects</Title>
                 <div className={s.projects}>
                     {mappedProject}
                 </div>

@@ -1,5 +1,5 @@
-import todolist from '../../assets/image/todolist.jpg'
-import socialWeb from '../../assets/image/social-network.png'
+import socialWeb from '../../../assets/image/social-network.png'
+import todolist from '../../../assets/image/todolist.jpg'
 
 export const projects = [
     {
