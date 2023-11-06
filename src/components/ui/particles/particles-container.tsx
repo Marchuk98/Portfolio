@@ -2,7 +2,7 @@ import {memo, useCallback, useContext} from "react";
 import {loadFull} from "tsparticles";
 import {Engine} from "tsparticles-engine";
 import {Particles} from "react-tsparticles";
-import {ThemeContext} from "../App/App";
+import {ThemeContext} from '../../../app/app'
 
 
 export const ParticlesContainer = memo(()=>{
@@ -65,7 +65,7 @@ export const ParticlesContainer = memo(()=>{
                 enable: true,
                 distance: windowWidth > 800 ? 180 : 100,
                 color: `${theme === 'dark' ? '#F3F6F9' : 'rgba(227,221,221,0.6)'}`,
-                opacity: 0.4,
+                opacity: 0.2,
                 width: 2,
             },
             move: {
@@ -96,7 +96,7 @@ export const ParticlesContainer = memo(()=>{
                 grab: {
                     distance: 200,
                     line_linked: {
-                        opacity: 1,
+                        opacity: 0.5,
                     },
                 },
                 repulse: {
