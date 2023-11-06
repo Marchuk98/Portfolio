@@ -1,0 +1,23 @@
+@import "../../../common/styles/sass/mixin";
+
+.contactsBlock{
+    background-color: #272727;
+    padding: 90px 0;
+    .contactsContainer{
+        @include flex(column, center, center, wrap);
+        .contactsFormWrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            .contactsInfoItem{
+                @include flex(column);
+                row-gap: 25px;
+            }
+        }
+    }
+}
+
+
+
