@@ -1,7 +1,7 @@
-import React, {createContext} from 'react';
-import {Header} from "../header/header";
-import {Footer} from "../footer/footer";
-import {Main} from "../section/main";
+import {createContext} from 'react';
+import {Header} from "../components/header/header";
+import {Main} from "../components/section/main"
+import {Footer} from "../components/footer/footer";
 
 
 export const ThemeContext = createContext<any>(null)

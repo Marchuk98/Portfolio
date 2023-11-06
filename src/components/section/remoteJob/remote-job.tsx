@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from "../../button/button";
+import {Button} from "../../ui/button/button";
 import s from './remote-job.module.scss'
 
 export const RemoteJob = () => {
