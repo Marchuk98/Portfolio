@@ -1,5 +1,5 @@
 import { FieldValues, useController, UseControllerProps } from 'react-hook-form';
-import { TextAreaField, TextAreaFieldProps } from './text-area-field/text-area-field';
+import { TextAreaField, TextAreaFieldProps } from '../ui/text-area-field/text-area-field';
 
 type ControlledTextAreaFieldProps<T extends FieldValues> = Omit<UseControllerProps<T>,
     'rules' | 'defaultValue'> & Omit<TextAreaFieldProps, 'onChange' | 'value'>;
