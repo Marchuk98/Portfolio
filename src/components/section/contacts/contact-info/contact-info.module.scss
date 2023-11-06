@@ -1,0 +1,44 @@
+@import "../../../../common/styles/sass/mixin";
+
+.contactInfoWrapper{
+    @include flex(row, center, initial, initial);
+    @media (max-width: 768px) {
+        .contactInfoWrapper {
+            @include flex(center);
+        }
+    }
+    .contactInfoIcon{
+        font-size: 28px;
+        margin-right: 65px;
+        text-align: center;
+        width: 60px;
+    }
+    .contactInfo{
+        @include flex(column);
+        margin-bottom: 20px;
+        .contactInfoTitle{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2;
+            letter-spacing: 1.402px;
+            color: white;
+        }
+        .contactInfoText{
+            padding: 3px 0;
+            color: #b0aac0;
+            font-family: 'Comfortaa', cursive;
+            font-size: 16.025px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.801px;
+        }
+    }
+}
+
+
+
+
+
+
+
