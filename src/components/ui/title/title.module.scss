@@ -1,13 +1,13 @@
-@import "/src/components/common/styles/sass/variables";
+@import "../../../common/styles/sass/variables";
+
 .title {
     position: relative;
-    max-width: 710px;
     text-align: center;
     color: $textColor;
     line-height: 1.2;
     letter-spacing: 5px;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 150px;
     text-transform: uppercase;
     h2 {
         font-weight: 500;
@@ -24,7 +24,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    top: 40px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
