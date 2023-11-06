@@ -1,5 +1,6 @@
 import {ComponentPropsWithoutRef, ElementType} from "react";
 import s from './button.module.scss'
+import clsx from "clsx";
 
 export type ButtonProps<T extends ElementType> = {
     as?: T
@@ -21,13 +22,20 @@ export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T> &
         ...rest
     } = props
 
+    const classNames = {
+        button: clsx(s.btn, s.btn1, className)
+    }
+
     return (
         <Component
             {...rest}
             target={target}
             href={href}
             onClick={onClick}
-            className={s.btn}>
+            className={classNames.button}>
+            <svg>
+                <rect x='0' y='0' fill='none' width='100%' height='100%' />
+            </svg>
             {children}
         </Component>
     )
