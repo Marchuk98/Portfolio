@@ -1,12 +1,11 @@
 import React from 'react';
 import s from './footer.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
 import {footer} from "./footer.data";
 
 export const Footer = () => {
     return (
         <footer className={s.footerBlock}>
-            <div className={`${styleContainer.container} ${s.footerContainer}`}>
+            <div className={`container ${s.footerContainer}`}>
                     <span className={s.text}>Vladimir Marchuk</span>
                 <ul className={s.footerList}>
                     {footer.map(({id, Icon, link,prefix})=>{
