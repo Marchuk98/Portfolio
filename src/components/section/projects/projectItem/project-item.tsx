@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './project-item.module.scss'
-import {Button} from "../../../button/button";
+import {Button} from "../../../ui/button/button";
 
 type ProjectItemType = {
     id: number
@@ -18,7 +18,7 @@ type ProjectItemPropsType = {
 
 export const ProjectItem = ({project}: ProjectItemPropsType) => {
     const {projectTitle, title, img, linkRepo, linkDeploy, projectDescription} = project;
-    // контейнер сюда надо наверное
+
     return (
         <li className={s.project}>
             <div className={s.card}>
