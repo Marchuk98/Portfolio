@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4806da75.css",
-    "main.js": "/Portfolio/static/js/main.8f2f2dfd.js",
+    "main.css": "/Portfolio/static/css/main.5b1bcfc3.css",
+    "main.js": "/Portfolio/static/js/main.80cc287b.js",
     "static/js/787.8675c87a.chunk.js": "/Portfolio/static/js/787.8675c87a.chunk.js",
+    "static/media/Essense-card.jpg": "/Portfolio/static/media/Essense-card.b894b3e680316515acf3.jpg",
+    "static/media/myPhoto.png": "/Portfolio/static/media/myPhoto.a9dc982877256da1285c.png",
+    "static/media/velocity-chat.jpeg": "/Portfolio/static/media/velocity-chat.fdc51830b9d2d8e9bbf2.jpeg",
+    "static/media/todolist.jpg": "/Portfolio/static/media/todolist.29028b6df62c0b6057fa.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.4806da75.css.map": "/Portfolio/static/css/main.4806da75.css.map",
-    "main.8f2f2dfd.js.map": "/Portfolio/static/js/main.8f2f2dfd.js.map",
+    "main.5b1bcfc3.css.map": "/Portfolio/static/css/main.5b1bcfc3.css.map",
+    "main.80cc287b.js.map": "/Portfolio/static/js/main.80cc287b.js.map",
     "787.8675c87a.chunk.js.map": "/Portfolio/static/js/787.8675c87a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4806da75.css",
-    "static/js/main.8f2f2dfd.js"
+    "static/css/main.5b1bcfc3.css",
+    "static/js/main.80cc287b.js"
   ]
 }
